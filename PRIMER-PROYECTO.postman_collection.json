@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "1178923c-1807-4016-b5d8-62b690185d92",
+		"name": "PRIMER-PROYECTO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CUSTOMER",
+			"item": [
+				{
+					"name": "LOCAL",
+					"item": [
+						{
+							"name": "Registrar cliente",
+							"request": {
+								"method": "POST",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Actualizar cliente",
+							"request": {
+								"method": "PUT",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Obtener lista de cliente",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Obtener cliente",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Eliminar cliente",
+							"request": {
+								"method": "DELETE",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "OPERATION",
+			"item": [
+				{
+					"name": "LOCAL",
+					"item": [
+						{
+							"name": "Registrar Cuenta",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Actualizar Cuenta",
+							"request": {
+								"method": "PUT",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Obtener Lista de Cuenta",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Obtener Cuenta",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Eliminar Cuenta",
+							"request": {
+								"method": "DELETE",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar Operaciones",
+							"request": {
+								"method": "POST",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Obtener Operacion",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Obtener lista de operacion",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "BANKCARD",
+			"item": [
+				{
+					"name": "LOCAL",
+					"item": [
+						{
+							"name": "Registrar-Tarjeta",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \r\n    \"cardnumber\":\"\",\r\n    \"pin\":123,\r\n    \"duedate\":\"\",\r\n    \"validationcode\":12\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9280/api/bankcard/card",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9280",
+									"path": [
+										"api",
+										"bankcard",
+										"card"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
