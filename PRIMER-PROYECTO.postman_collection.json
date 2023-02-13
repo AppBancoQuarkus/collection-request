@@ -19,7 +19,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"typeCustomer\": \"N\",\r\n    \"numberDocument\": \"434343\",\r\n    \"name\": \"dfsdf\",\r\n    \"lastname\": \"TORRsdfsdfES\"\r\n}",
+									"raw": "{\r\n    \"typeCustomer\": \"N\",\r\n    \"numberDocument\": \"65554545454545667\",\r\n    \"name\": \"ejemplo\",\r\n    \"lastname\": \"juan\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
