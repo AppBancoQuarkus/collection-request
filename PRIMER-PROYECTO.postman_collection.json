@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "1178923c-1807-4016-b5d8-62b690185d92",
+		"_postman_id": "cee73e6b-63ea-47da-8db2-45e69e7e00c4",
 		"name": "PRIMER-PROYECTO",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4501461"
 	},
 	"item": [
 		{
@@ -15,15 +16,58 @@
 							"name": "Registrar cliente",
 							"request": {
 								"method": "POST",
-								"header": []
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"typeCustomer\": \"N\",\r\n    \"numberDocument\": \"434343\",\r\n    \"name\": \"dfsdf\",\r\n    \"lastname\": \"TORRsdfsdfES\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9279/api/customer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9279",
+									"path": [
+										"api",
+										"customer"
+									]
+								}
 							},
 							"response": []
 						},
 						{
-							"name": "Actualizar cliente",
+							"name": "Actualizar Cliente",
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"typeCustomer\": \"N\",\r\n    \"numberDocument\": \"46545270\",\r\n    \"name\": \"carlos\",\r\n    \"lastname\": \"TORRES\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9279/api/customer/77",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9279",
+									"path": [
+										"api",
+										"customer",
+										"77"
+									]
+								}
 							},
 							"response": []
 						},
@@ -31,7 +75,10 @@
 							"name": "Obtener lista de cliente",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -39,7 +86,20 @@
 							"name": "Obtener cliente",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9279/api/customer/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9279",
+									"path": [
+										"api",
+										"customer",
+										"2"
+									]
+								}
 							},
 							"response": []
 						},
@@ -47,7 +107,20 @@
 							"name": "Eliminar cliente",
 							"request": {
 								"method": "DELETE",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9279/api/customer/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9279",
+									"path": [
+										"api",
+										"customer",
+										"2"
+									]
+								}
 							},
 							"response": []
 						}
@@ -76,7 +149,10 @@
 							"name": "Actualizar Cuenta",
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -84,7 +160,10 @@
 							"name": "Obtener Lista de Cuenta",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -92,7 +171,10 @@
 							"name": "Obtener Cuenta",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -100,7 +182,10 @@
 							"name": "Eliminar Cuenta",
 							"request": {
 								"method": "DELETE",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -108,7 +193,28 @@
 							"name": "Registrar Operaciones",
 							"request": {
 								"method": "POST",
-								"header": []
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ammount\": 45,\r\n    \"flagdDescription\": \"T\",\r\n    \"description\": \"Transferencia\",\r\n    \"idAccountCustomer\": 1,\r\n    \"idAccountCustomerDestiny\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9385/api/operation",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9385",
+									"path": [
+										"api",
+										"operation"
+									]
+								}
 							},
 							"response": []
 						},
@@ -116,7 +222,10 @@
 							"name": "Obtener Operacion",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						},
@@ -124,7 +233,19 @@
 							"name": "Obtener lista de operacion",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9385/api/operation",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9385",
+									"path": [
+										"api",
+										"operation"
+									]
+								}
 							},
 							"response": []
 						}
