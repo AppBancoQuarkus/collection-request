@@ -1,9 +1,8 @@
 {
 	"info": {
-		"_postman_id": "cee73e6b-63ea-47da-8db2-45e69e7e00c4",
+		"_postman_id": "5a9067c3-08ef-4c85-a79e-efd6157c6c3b",
 		"name": "PRIMER-PROYECTO",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "4501461"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -19,7 +18,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"typeCustomer\": \"N\",\r\n    \"numberDocument\": \"65554545454545667\",\r\n    \"name\": \"ejemplo\",\r\n    \"lastname\": \"juan\"\r\n}",
+									"raw": "{\r\n    \"typeCustomer\": \"N\",\r\n    \"numberDocument\": \"66344545445545667\",\r\n    \"name\": \"ejemplo\",\r\n    \"lastname\": \"juan\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -48,7 +47,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"typeCustomer\": \"N\",\r\n    \"numberDocument\": \"46545270\",\r\n    \"name\": \"carlos\",\r\n    \"lastname\": \"TORRES\"\r\n}",
+									"raw": "{\r\n    \"typeCustomer\": \"N\",\r\n    \"numberDocument\": \"12345600\",\r\n    \"name\": \"carlos\",\r\n    \"lastname\": \"TORRES\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -56,7 +55,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:9279/api/customer/77",
+									"raw": "http://localhost:9279/api/customer/1",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -65,19 +64,8 @@
 									"path": [
 										"api",
 										"customer",
-										"77"
+										"1"
 									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Obtener lista de cliente",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": ""
 								}
 							},
 							"response": []
@@ -88,7 +76,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:9279/api/customer/2",
+									"raw": "http://localhost:9279/api/customer/1",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -97,7 +85,7 @@
 									"path": [
 										"api",
 										"customer",
-										"2"
+										"1"
 									]
 								}
 							},
@@ -109,7 +97,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:9279/api/customer/2",
+									"raw": "http://localhost:9279/api/customer/1",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -118,7 +106,7 @@
 									"path": [
 										"api",
 										"customer",
-										"2"
+										"1"
 									]
 								}
 							},
@@ -139,8 +127,26 @@
 							"request": {
 								"method": "POST",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"flag_creation\" : \"TC\",\r\n\"current_amount\" : \"50\",\r\n\"starting_amount\" : \"7000\",\r\n\"description\" : \"TARJETA DE CREDITO DORADO\",\r\n\"flag_account\" : \"P\",\r\n\"startdate\" : \"15/02/2023\",\r\n\"courtdate\" : \"01/03/2023\",   \r\n\"quota\" : \"5\",\r\n\"paymentdate\" : \"500\",\r\n\"customerRequest\" : { \"typeCustomer\": \"P\",\r\n\t\t\t\t\t\"numberDocument\":\"12335786\",\r\n\t\t\t\t\t\t\t  \"name\":\"Vic\",\r\n\t\t\t\t\t\t  \"lastname\":\"Testing\"\r\n\r\n\r\n},\r\n\"bankCardRequest\" : {\"cardnumber\": \"5425465456618\",\r\n\t\t\t\t\t \"pin\": 123,\r\n\t\t\t\t\t \"duedate\": \"25/02/2022\",\r\n\t\t\t\t\t \"validationcode\": 123\r\n\t\t\t\t\t}\r\n  \r\n\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
-									"raw": ""
+									"raw": "http://localhost:9385/api/account",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9385",
+									"path": [
+										"api",
+										"account"
+									]
 								}
 							},
 							"response": []
@@ -150,8 +156,27 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"flag_creation\" : \"TC\",\r\n\"current_amount\" : \"50\",\r\n\"starting_amount\" : \"9000\",\r\n\"description\" : \"TARJETA DE CREDITO\",\r\n\"flag_account\" : \"P\",\r\n\"startdate\" : \"15/02/2025\",\r\n\"courtdate\" : \"01/03/2025\",   \r\n\"quota\" : \"5\",\r\n\"paymentdate\" : \"500\",\r\n\"customerRequest\" : { \"typeCustomer\": \"P\",\r\n\t\t\t\t\t\"numberDocument\":\"12345786\",\r\n\t\t\t\t\t\t\t  \"name\":\"Vic\",\r\n\t\t\t\t\t\t  \"lastname\":\"Testing\"\r\n\r\n\r\n},\r\n\"bankCardRequest\" : {\"cardnumber\": \"5421856974523618\",\r\n\t\t\t\t\t \"pin\": 123,\r\n\t\t\t\t\t \"duedate\": \"25/02/2022\",\r\n\t\t\t\t\t \"validationcode\": 123\r\n\t\t\t\t\t}\r\n  \r\n\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
-									"raw": ""
+									"raw": "http://localhost:9385/api/account/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9385",
+									"path": [
+										"api",
+										"account",
+										"2"
+									]
 								}
 							},
 							"response": []
@@ -162,7 +187,16 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": ""
+									"raw": "http://localhost:9385/api/account",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9385",
+									"path": [
+										"api",
+										"account"
+									]
 								}
 							},
 							"response": []
@@ -173,7 +207,17 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": ""
+									"raw": "http://localhost:9385/api/account/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9385",
+									"path": [
+										"api",
+										"account",
+										"1"
+									]
 								}
 							},
 							"response": []
@@ -184,7 +228,17 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": ""
+									"raw": "http://localhost:9385/api/account/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9385",
+									"path": [
+										"api",
+										"account",
+										"1"
+									]
 								}
 							},
 							"response": []
@@ -196,7 +250,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"ammount\": 45,\r\n    \"flagdDescription\": \"T\",\r\n    \"description\": \"Transferencia\",\r\n    \"idAccountCustomer\": 1,\r\n    \"idAccountCustomerDestiny\": 3\r\n}",
+									"raw": "{\r\n    \"ammount\": 45,\r\n    \"flagdDescription\": \"R\",\r\n    \"description\": \"Transferencia\",\r\n    \"idAccountCustomer\": 1,\r\n    \"idAccountCustomerDestiny\": 3\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -224,7 +278,17 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": ""
+									"raw": "http://localhost:9385/api/operation/R",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9385",
+									"path": [
+										"api",
+										"operation",
+										"R"
+									]
 								}
 							},
 							"response": []
@@ -273,7 +337,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{ \r\n    \"cardnumber\":\"\",\r\n    \"pin\":123,\r\n    \"duedate\":\"\",\r\n    \"validationcode\":12\r\n}",
+									"raw": "{ \r\n    \"cardnumber\":\"433242343\",\r\n    \"pin\":123,\r\n    \"duedate\":\"\",\r\n    \"validationcode\":12\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -281,7 +345,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:9280/api/bankcard/card",
+									"raw": "http://localhost:9280/api/bankcard",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -289,8 +353,7 @@
 									"port": "9280",
 									"path": [
 										"api",
-										"bankcard",
-										"card"
+										"bankcard"
 									]
 								}
 							},
