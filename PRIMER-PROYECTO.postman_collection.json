@@ -214,6 +214,29 @@
 							"response": []
 						},
 						{
+							"name": "Obtener todos los products del cliente",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9385/api/account/products/4/false",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9385",
+									"path": [
+										"api",
+										"account",
+										"products",
+										"4",
+										"false"
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Obtener Lista de Cuenta",
 							"request": {
 								"method": "GET",
